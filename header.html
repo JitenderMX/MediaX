@@ -1,0 +1,116 @@
+<nav class="navbar navbar-expand-lg p-3">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#home">
+        <img src="image/logo.png" alt="">
+    </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#about" data-page="about">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project" data-page="project">PROJECT</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#service" data-page="service">SERVICES</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#career" data-page="career">CAREERS</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact" data-page="contact">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- <script>
+  $(document).ready(function() {
+    // Handle click event for nav-links
+    $('.nav-link').on('click', function(e) {
+      // e.preventDefault();
+      // Get the value after '#' from the href attribute
+      var page = $(this).attr('href').substring(1);
+      // Load corresponding HTML content into the main tag
+      $('main').load(page + '.html');
+    });
+  });
+</script> -->
+<!-- <script>
+  // Function to handle loading content based on page value
+  function loadContent(page) {
+    // List of valid page values
+    var validPages = ['home', 'about', 'project', 'service', 'career', 'contact'];
+
+    // Check if the extracted page value is valid
+    if (validPages.includes(page)) {
+      // Load corresponding HTML content into the main tag
+      $('main').load(page + '.html');
+    } else {
+      // If the page value is not valid, load the error.html page
+      $('main').load('404.html');
+    }
+  }
+
+  $(document).ready(function() {
+    // Handle click event for nav-links
+    $('.nav-link').on('click', function(e) {
+      // e.preventDefault();
+      // Get the value after '#' from the href attribute
+      var page = $(this).attr('href').substring(1);
+      // Call the function to load content based on page value
+      loadContent(page);
+    });
+
+    // Load content on window load
+    var initialPage = window.location.hash.substring(1);
+    loadContent(initialPage);
+  });
+</script> -->
+
+<script>
+  // Function to handle loading content based on page value
+  function loadContent(page) {
+    // List of valid page values
+    var validPages = ['about', 'project', 'service', 'career', 'contact'];
+
+    // Check if the extracted page value is valid
+    if (!page) {
+      // If there is no value after '#', load the home.html page by default
+      $('main').load('home.html');
+    } else if (validPages.includes(page)) {
+      // If the page value is valid, load corresponding HTML content into the main tag
+      $('main').load(page + '.html');
+    } else {
+      // If the page value is not valid, load the 404.html page
+      $('main').load('404.html');
+    }
+  }
+
+  $(document).ready(function() {
+    // Handle click event for nav-links
+    $('.nav-link').on('click', function(e) {
+      // e.preventDefault();
+      // Get the value after '#' from the href attribute
+      var page = $(this).attr('href').substring(1);
+      // Call the function to load content based on page value
+      loadContent(page);
+    });
+
+    // Load content on window load
+    var initialPage = window.location.hash.substring(1);
+    // Call the function to load content based on the initial page value
+    // if(initialPage == null){
+    // loadContent("home");
+
+    // }
+    loadContent(initialPage);
+  });
+</script>
+
+
+
+
