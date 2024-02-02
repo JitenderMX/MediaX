@@ -38,23 +38,28 @@ Spacing System
 :root {
     --th-color-1: #FB3636;
     --th-color-2: #090909;
-    --th-color-3: #FFF0E8;
+    --th-color-3: #FFF;
     --th-color-4: #FFFDF6;
     --th-color-5: #878787;
     --th-color-6: #EBEBEB;
+    --th-color-6: #FFF0E8;
     --th-font-1: 'Helvetica Neue', sans-serif;
-    --th-h1: 100px;
-    --th-h2: 80px;
+    --th-h1: 120px;
+    --th-h2: 64px;
     --th-h3: 64px;
     --th-p1: 24px;
     --th-p2: 18px;
     --th-p3: 16px;
 }
 
-main{
+main {
     margin-top: 72.72px;
 }
 
+.container-xxl {
+    --bs-gutter-x: 3rem !important;
+    max-width: 1440px;
+}
 
 a {
     text-decoration: none !important;
@@ -68,18 +73,18 @@ h4,
 h5,
 h6 {
     font-family: var(--th-font-family-1);
-    color: var(--th-color-2) !important;
-    line-height: 140%;
+    color: var(--th-color-2);
+    line-height: 130%;
     text-transform: uppercase;
     font-weight: 700;
 }
 
-h1 .text-red,
-h2 .text-red,
-h3 .text-red,
-h4 .text-red,
-h5 .text-red,
-h6 .text-red {
+h1 span.text-red,
+h2 span.text-red,
+h3 span.text-red,
+h4 span.text-red,
+h5 span.text-red,
+h6 span.text-red {
     color: var(--th-color-1) !important;
 }
 
@@ -96,15 +101,29 @@ h3 {
 }
 
 h6 {
+    font-weight: 400;
     font-size: var(--th-p2) !important;
+    margin: 0;
+    text-transform: capitalize;
 }
 
 p {
     color: var(--th-color-2);
     font-family: var(--th-font-1);
-    font-size: var(--th-p1);
+    font-size: var(--th-p2);
     font-weight: 400;
-    line-height: 130%;
+    line-height: 140%;
+}
+
+.sec-h {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sec-h .fa-solid {
+    font-size: var(--th-p2);
+    color: var(--th-color-1) !important;
 }
 
 .th-btn {
@@ -180,7 +199,7 @@ p {
 /* ------------- base End ------------- */
 
 
-/* Headre Scetion Start ------------------------------ */
+/* Headre Section Start ------------------------------ */
 #header {
     position: fixed;
     top: 0;
@@ -207,4 +226,62 @@ p {
     margin: 0px 20px;
 }
 
-/* -------------  Header Scetion  End ------------- */
+/* -------------  Header Section  End ------------- */
+
+
+/* 1. Home Hero Banner Section Start ------------------------------ */
+.home-hero {
+    background: var(--th-color-2);
+    padding: 80px 0 30px 0;
+    position: relative;
+}
+
+.home-hero .hh-text {
+    position: relative;
+    z-index: 2;
+}
+
+.home-hero h1 {
+    color: var(--th-color-3);
+}
+
+.home-hero p {
+    color: var(--th-color-3);
+    width: 100%;
+    max-width: 800px;
+}
+
+.home-hero h6 {
+    color: var(--th-color-3);
+}
+
+.home-hero .circle-img {
+    max-width: 130px;
+    width: 100%;
+}
+
+.home-hero .floating-img {
+    width: 100%;
+    max-width: 400px;
+    position: absolute;
+    pointer-events: none;
+    transition: transform 0.3s ease-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -60%);
+    z-index: 1;
+}
+
+/* -------------  Home Hero Banner Section  End ------------- */
+
+
+/* 2. Take Your Brand Section Start ------------------------------ */
+.take-your-brand {
+    padding: 80px 0;
+}
+.take-your-brand .tyb-h img{
+    width: 100%;
+    max-width: 70px;
+}
+
+/* -------------  Take Your Brand Section  End ------------- */
