@@ -22,8 +22,6 @@ function loadContent(page) {
     // If the page value is not valid, load the 404.html page
     $('main').load('404.html');
   }
-  
-
 }
 // Function to initialize the Slick slider
 function initializeOtherJs() {
@@ -44,17 +42,12 @@ function initializeOtherJs() {
 }
 $(document).ready(function() {
   // Handle click event for nav-links
-  $('.nav-link').on('click', function(e) {
+ 
+  $('a.page-load-link').on('click', function(e) {
     // e.preventDefault();
     // Get the value after '#' from the href attribute
     var page = $(this).attr('href').substring(1);
-    // Call the function to load content based on page value
-    loadContent(page);
-  });
-  $('.navbar-brand').on('click', function(e) {
-    // e.preventDefault();
-    // Get the value after '#' from the href attribute
-    var page = $(this).attr('href').substring(1);
+    // alert(page);
     // Call the function to load content based on page value
     loadContent(page);
   });

@@ -46,7 +46,7 @@ Spacing System
     --th-font-1: 'Helvetica Neue', sans-serif;
     --th-h1: 120px;
     --th-h2: 64px;
-    --th-h3: 64px;
+    --th-h3: 54px;
     --th-p1: 24px;
     --th-p2: 18px;
     --th-p3: 16px;
@@ -70,6 +70,12 @@ a {
     color: var(--th-color-3);
 }
 
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
 h1,
 h2,
 h3,
@@ -78,7 +84,7 @@ h5,
 h6 {
     font-family: var(--th-font-family-1);
     color: var(--th-color-2);
-    line-height: 130%;
+    line-height: 120%;
     text-transform: uppercase;
     font-weight: 700;
 }
@@ -213,22 +219,148 @@ p {
     z-index: 100;
 }
 
-.navbar .navbar-brand {
-    max-width: 150px;
+nav {
+    position: relative;
 }
 
-.navbar .navbar-brand img {
+nav .navbar-brand {
     width: 100%;
+    max-width: 150px;
+    display: block;
 }
 
-.navbar .nav-link {
+nav .menu-btn {
+    color: var(--th-color-4);
+    font-size: var(--th-p2);
+    cursor: pointer;
+    font-weight: 300;
+    text-align: end;
+    text-transform: uppercase;
+    transition: all .5s;
+}
+
+nav .menu-btn:hover {
+    color: var(--th-color-1);
+}
+
+nav .navbar-brand img {
+    width: 100% !important;
+}
+
+nav #nav-hide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100% !important;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translateY(-100%);
+    background-color: var(--th-color-2);
+    overflow-y: scroll;
+    transition: all .5s;
+    background-color: var(--th-color-2);
+}
+
+nav #nav-hide.active {
+    transform: translateY(0%);
+}
+
+nav .nav-right li,
+nav .nav-right b,
+nav .nav-right a {
     font-family: var(--th-font-1);
-    font-size: var(--th-p3);
+    font-size: var(--th-p2);
     color: var(--th-color-3);
     font-weight: 300;
     line-height: 130%;
     letter-spacing: 1.4px;
-    margin: 0px 20px;
+    text-align: end;
+    padding-top: 10px;
+}
+
+#menu-container {
+    padding: 300px 0 50px 0;
+}
+
+#menu-container .nav-left a,
+#menu-container .nav-left a::after,
+#menu-container .nav-left a::before {
+    font-family: var(--th-font-1);
+    color: var(--th-color-4);
+    font-size: var(--th-h2);
+    font-weight: 700;
+    line-height: 78px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    position: relative;
+    transition: all .5s;
+}
+
+#menu-container .nav-left a {
+    display: block;
+    overflow: hidden !important;
+}
+
+#menu-container .nav-left li:nth-child(1) a::after,
+#menu-container .nav-left li:nth-child(1) a::before {
+    content: "HOME";
+}
+
+#menu-container .nav-left li:nth-child(2) a::after,
+#menu-container .nav-left li:nth-child(2) a::before {
+    content: "ABOUT";
+}
+
+#menu-container .nav-left li:nth-child(3) a::after,
+#menu-container .nav-left li:nth-child(3) a::before {
+    content: "PROJECT";
+}
+
+#menu-container .nav-left li:nth-child(4) a::after,
+#menu-container .nav-left li:nth-child(4) a::before {
+    content: "SERVICES";
+}
+
+#menu-container .nav-left li:nth-child(5) a::after,
+#menu-container .nav-left li:nth-child(5) a::before {
+    content: "CAREERS";
+}
+
+#menu-container .nav-left li:nth-child(6) a::after,
+#menu-container .nav-left li:nth-child(6) a::before {
+    content: "CONTACT";
+}
+
+#menu-container .nav-left a::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(0%);
+    width: 100%;
+    background-color: var(--th-color-2);
+    transition: all .5s;
+}
+
+#menu-container .nav-left a::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    width: 100%;
+    background-color: var(--th-color-2);
+    color: var(--th-color-1);
+    transition: all .5s;
+}
+
+#menu-container .nav-left a:hover:after {
+    transform: translateY(-100%);
+}
+
+#menu-container .nav-left a:hover:before {
+    transform: translateY(0%);
 }
 
 /* -------------  Header Section  End ------------- */
@@ -504,29 +636,39 @@ p {
 
 /* 7.Home Testimonial Section Start ------------------------------ */
 
-.home-testimonial{
+.home-testimonial {
     background-color: var(--th-color-2);
-    padding: 50px 0;
+    padding: 80px 0;
 }
+
+.home-testimonial h2 {
+    max-width: 600px;
+    color: var(--th-color-4);
+}
+
 .ht-box img {
     width: 100%;
     max-width: 250px;
 }
+
 .ht-box p {
-   color: var(--th-color-4);
-   font-weight: 300;
+    color: var(--th-color-4);
+    font-weight: 300;
 }
+
 .ht-box .quotes {
-   color: var(--th-color-1);
-   font-size: var(--th-p1);
+    color: var(--th-color-1);
+    font-size: var(--th-p1);
 }
-.t-line{
+
+.t-line {
     width: 100%;
     height: 2px;
     border-radius: 10px;
     background-color: var(--th-color-5);
 }
-.t-arrow .fa-solid{
+
+.t-arrow .fa-solid {
     width: 40px;
     height: 40px;
     line-height: 40px;
@@ -537,4 +679,69 @@ p {
     background-color: var(--th-color-4);
     cursor: pointer;
 }
+
 /* ------------- Home Testimonial Section  End ------------- */
+
+/* 8.Let's Connect Section Start ------------------------------ */
+.let-connect {
+    /* padding: 50px 0px; */
+    text-align: center;
+}
+
+.lc-box {
+    background-color: var(--th-color-1);
+    padding: 120px 0;
+}
+
+.lc-box h3 {
+    color: var(--th-color-4);
+}
+
+.lc-box h3 {
+    color: var(--th-color-4);
+}
+
+.lc-box .contact-link p {
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+.lc-box .contact-link img {
+    width: 100%;
+    max-width: 110px;
+}
+
+/* ------------- Let's Connect Section  End ------------- */
+
+/* 9.Footer Section Start ------------------------------ */
+footer {
+    padding: 200px 0 50px 0;
+    background-color: var(--th-color-2);
+}
+
+footer img {
+    width: 100%;
+    max-width: 250px;
+    margin-bottom: 20px;
+}
+
+footer li {
+    padding-top: 8px;
+}
+
+footer b,
+footer a {
+    font-family: var(--th-font-1);
+    font-size: var(--th-p2);
+    font-weight: 300;
+    line-height: 130%;
+    color: #9A9A9A;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+footer b {
+    font-weight: 600;
+}
+
+/* ------------- Footer Section  End ------------- */
