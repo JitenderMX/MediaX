@@ -14,18 +14,24 @@ function loadContent(page) {
   // Check if the extracted page value is valid
   if (!page) {
     // If there is no value after '#', load the home.html page by default
+  $('body,html').animate({scrollTop : 0}, 300);
+
     $('main').load('home.html');
   } else if (validPages.includes(page)) {
     // If the page value is valid, load corresponding HTML content into the main tag
+  $('body,html').animate({scrollTop : 0}, 300);
+
     $('main').load(page + '.html', initializeOtherJs);
   } else {
     // If the page value is not valid, load the 404.html page
+  $('body,html').animate({scrollTop : 0}, 300);
+
     $('main').load('404.html');
   }
 }
 // Function to initialize the Slick slider
 function initializeOtherJs() {
-  $('body,html').animate({scrollTop : 0}, 500);
+  // $('body,html').animate({scrollTop : 0}, 500);
   $('.ht-container').slick({
     infinite: true,
     slidesToShow: 1,
@@ -68,25 +74,25 @@ function initializeOtherJs() {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-2.jpg)');
-    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(150px, 76px)', 'color': '#090909' });
+    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(150px, 74px)', 'color': '#090909' });
   });
   $('.service-box:nth-child(4)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#fff' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-3.jpg)');
-    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(320px, 140px)', 'color': '#fff' });
+    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(320px, 134px)', 'color': '#fff' });
   });
   $('.service-box:nth-child(5)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-4.jpg)');
-    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(330px, 202px)', 'color': '#090909' });
+    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(330px, 194px)', 'color': '#090909' });
   });
   $('.service-box:nth-child(6)').on('mouseenter', function () {
-    $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
+    $(".service-box h4").css({ "font-weight": "400", 'color': '#090909'});
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-5.jpg)');
-    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(360px, 266px)', 'color': '#090909' });
+    $(this).parent().find(".service-arrow").css({ 'transform': 'translate(360px, 257px)', 'color': '#090909' });
   });
   // Rest of your code...
 }

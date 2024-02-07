@@ -861,6 +861,7 @@ footer b {
 
 /* 14.Service Accordion Section Start ------------------------------ */
 .sa-box {
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     transition: all .5s;
@@ -887,7 +888,7 @@ footer b {
     transform: rotate(180deg);
 }
 
-.sa-right-box {
+.sa-box.active  .sa-right-box {
     padding: 20px;
 }
 
