@@ -121,8 +121,8 @@ p {
     color: var(--th-color-2);
     font-family: var(--th-font-1);
     font-size: var(--th-p2);
-    font-weight: 400;
-    line-height: 140%;
+    font-weight: 300;
+    line-height: 130%;
 }
 
 .sec-h {
@@ -239,6 +239,10 @@ nav .menu-btn {
     transition: all .5s;
 }
 
+nav .menu-btn .fa-bars {
+    font-size: 35px !important;
+}
+
 nav .menu-btn:hover {
     color: var(--th-color-1);
 }
@@ -326,12 +330,12 @@ nav .nav-right a {
 
 #menu-container .nav-left li:nth-child(5) a::after,
 #menu-container .nav-left li:nth-child(5) a::before {
-    content: "CAREERS";
+    content: "CONTACT";
 }
 
 #menu-container .nav-left li:nth-child(6) a::after,
 #menu-container .nav-left li:nth-child(6) a::before {
-    content: "CONTACT";
+    content: "CAREERS";
 }
 
 #menu-container .nav-left a::after {
@@ -367,6 +371,13 @@ nav .nav-right a {
 
 
 /* 1. Home Hero Banner Section Start ------------------------------ */
+@keyframes zigzag {
+    0% { transform: translate(-30%, -60%) scale(1); }
+    25% { transform: translate(-0%, -40%) scale(.7); }
+    50% { transform: translate(30%, -60%) scale(.8); }
+    75% { transform: translate(50%, -40%) scale(.9); }
+    100% { transform: translate(80%, -60%) scale(.7); }
+}
 .home-hero {
     background: var(--th-color-2);
     padding: 80px 0 30px 0;
@@ -407,6 +418,7 @@ nav .nav-right a {
     left: 50%;
     transform: translate(-30%, -60%);
     z-index: 1;
+    animation: zigzag 10s infinite alternate; 
 }
 
 /* -------------  Home Hero Banner Section  End ------------- */
@@ -458,15 +470,15 @@ nav .nav-right a {
 
 @keyframes moveLeftToRight {
     0% {
-        transform: translateX(0px);
+        transform: translateX(0%);
     }
 
     50% {
-        transform: translateX(-1600px);
+        transform: translateX(-50%);
     }
 
     100% {
-        transform: translateX(0);
+        transform: translateX(0%);
     }
 }
 
@@ -621,7 +633,7 @@ nav .nav-right a {
     padding: 50px 0;
 }
 
-.we-also-do .wad-box {}
+/* .we-also-do .wad-box {} */
 
 .we-also-do .wad-box img {
     filter: grayscale(100%);
@@ -745,3 +757,297 @@ footer b {
 }
 
 /* ------------- Footer Section  End ------------- */
+
+
+
+/* 9.About Hero Section Start ------------------------------ */
+.about-hero {
+    padding: 150px 0;
+    background-color: var(--th-color-2);
+}
+
+.about-hero h2 {
+    color: var(--th-color-4);
+}
+
+/* ------------- About Hero Section  End ------------- */
+
+/* 10.We Believe Section Start ------------------------------ */
+.we-believe {
+    padding: 80px 0 0 0;
+}
+
+.we-believe p {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 300;
+    line-height: 120%;
+    width: 100%;
+    max-width: 700px;
+}
+
+.we-believe img {
+    width: 100%;
+    transform: translateY(-150px);
+}
+
+/* ------------- We Believe Section  End ------------- */
+
+
+/* 11.Our Clientele Section Start ------------------------------ */
+.our-clientele {
+    padding: 50px 0;
+}
+
+.our-clientele p {
+    font-size: var(--th-p1);
+}
+
+.oc-container .oc-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+}
+
+/* ------------- Our Clientele Section  End ------------- */
+
+/* 12.Our Clientele Section Start ------------------------------ */
+.our-creative-crew {
+    padding: 100px 0;
+    background-color: var(--th-color-2);
+}
+
+.our-creative-crew h2 {
+    color: var(--th-color-4);
+}
+
+.our-creative-crew p {
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+.occ-container .occ-box {
+    display: flex;
+    width: 6720px;
+    animation: moveLeftToRight 60s linear infinite;
+}
+
+.occ-container .occ-box:nth-child(2) {
+    transform: translateX(-100px);
+}
+
+.occ-container .occ-img-box {
+    width: 280px;
+    padding-right: 20px;
+}
+
+.occ-container .occ-img-box img {
+    width: 100%;
+}
+
+/* ------------- Our Clientele Section  End ------------- */
+
+/* 13.Service Hero Image Section Start ------------------------------ */
+.service-img-sec {
+    padding: 0 0 50px 0;
+    position: relative;
+    transform: translateY(-15%);
+}
+
+/* ------------- Service Hero Image Section  End ------------- */
+
+
+/* 14.Service Accordion Section Start ------------------------------ */
+.sa-box {
+    display: flex;
+    flex-direction: column;
+    transition: all .5s;
+}
+
+.sa-box.active {
+    flex-direction: row;
+}
+
+
+.sa-box .sa-box-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sa-left-box {
+    padding: 50px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+.sa-box.active .sa-left-box img {
+    transform: rotate(180deg);
+}
+
+.sa-right-box {
+    padding: 20px;
+}
+
+.sa-right-box img {
+    display: none;
+}
+
+.sa-box.active .sa-right-box img {
+    display: block;
+}
+
+.sa-box.active .sa-left-box .top-space-no {
+    display: none;
+}
+
+.sa-box .sa-left-box .top-space {
+    display: none;
+}
+
+.sa-box.active .sa-left-box .top-space {
+    display: block;
+}
+
+.sa-left-box h6 {
+    font-size: var(--th-p1) !important;
+    text-shadow: -1px 1px 0 var(--th-color-2), 1px 1px 0 var(--th-color-2), 1px -1px 0 var(--th-color-2), -1px -1px 0 var(--th-color-2);
+    color: #F5F5F5;
+    letter-spacing: 2px;
+}
+
+.sa-left-box p {
+    font-size: var(--th-p1);
+    margin-bottom: 0;
+}
+
+.sa-left-box p.top-space {
+    max-width: 95%;
+    margin-top: 70px;
+}
+
+/* ------------- Service Accordion Section  End ------------- */
+
+/* 15.Project Section Start ------------------------------ */
+#project-page .success-stories {
+    background-color: var(--th-color-2);
+}
+
+#project-page .success-stories .col-12 h2 {
+    color: var(--th-color-4);
+}
+
+#project-page .success-stories .col-12 p {
+    max-width: 900px;
+    font-size: var(--th-p1);
+    color: var(--th-color-4);
+}
+
+#project-page .let-connect {
+    background-color: var(--th-color-2);
+}
+
+/* ------------- Project Section  End ------------- */
+
+/* 16.Contact Form Section Start ------------------------------ */
+.contact-form {
+    padding: 100px 0;
+}
+
+.contact-form p {
+    max-width: 900px;
+    font-size: var(--th-p1);
+}
+
+.contact-form .form-label {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+
+.contact-form .form-check-label {
+    color: #878787;
+    font-family: var(--th-font-1);
+    font-weight: 400;
+}
+
+.contact-form .form-control {
+    border-radius: 0;
+    border: 1px solid var(--th-color-2);
+}
+
+.contact-form input[type="checkbox"] {
+    border-radius: 0;
+}
+
+.contact-form button[type="submit"] {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1);
+    font-weight: 400;
+    border: none;
+    background-color: transparent;
+    transition: all .5s;
+}
+
+.contact-form button[type="submit"] img {
+    max-width: 40px;
+}
+
+.contact-form .contact-detials {
+    position: sticky;
+    top: 100px;
+
+    background-color: var(--th-color-1);
+    padding: 40px 0;
+}
+
+.contact-form .cd-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+    background-color: var(--th-color-3);
+    padding: 20px;
+    text-align: right;
+}
+
+.contact-form .cd-box .cd-top-box h6,
+.contact-form .cd-box .cd-bottom-box h6 {
+    color: var(--th-color-2);
+    font-family: var(--th-font-1);
+    font-size: var(--th-p1) !important;
+    font-weight: 400;
+}
+
+.contact-form .cd-box .cd-bottom-box h6 {
+    font-weight: 700;
+}
+
+.contact-form .cd-box .cd-top-box ul li a {
+    color: var(--th-color-2) !important;
+    font-family: var(--th-font-1) !important;
+    font-size: var(--th-p1) !important;
+    font-weight: 400;
+}
+
+.contact-form .cd-box .cd-bottom-box ul li a {
+    color: var(--th-color-5) !important;
+    font-family: var(--th-font-1) !important;
+    font-size: var(--th-p2) !important;
+    font-weight: 400;
+}
+
+
+/* ------------- Contact Form Section  End ------------- */
+
+
+/* 17.Located Section Start ------------------------------ */
+.located {
+    padding: 50px 0;
+}
+
+/* ------------- Located Section  End ------------- */

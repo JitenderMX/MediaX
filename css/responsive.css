@@ -11,14 +11,7 @@
 /* Medium devices (768px and down) */
 
 @media screen and (max-width: 768px) {
-    :root {
-        --th-h1: 120px;
-        --th-h2: 64px;
-        --th-h3: 54px;
-        --th-p1: 24px;
-        --th-p2: 18px;
-        --th-p3: 16px;
-    }
+   
 }
 
 

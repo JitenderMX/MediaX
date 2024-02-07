@@ -1,13 +1,16 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $full_name = $_POST["full-name"];
-    $phone = $_POST["phone"];
     $email = $_POST["email"];
+    $company = $_POST["company"];
+    $number = $_POST["number"];
+    $service = $_POST["service"];
+    $budget = $_POST["budget"];
     $message = $_POST["message"];
 
-    $to = "armoniaretail@gmail.com"; // Replace with your email address
+    $to = "jitender.work.mediax@gmail.com"; // Replace with your email address
     $subject = "Contact Form Submission";
-    $body = "Full Name: $full_name\nPhone: $phone\nEmail: $email\nMessage:\n$message";
+    $body = "Client Name: $full_name\nEmail: $email\Name Comapny: $company\nPhone: $number\Service They Want: $service\Budget They Have: $email\nMessage:\n$message";
 
     $headers = "From: $email";
 

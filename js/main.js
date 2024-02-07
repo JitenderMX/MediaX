@@ -25,6 +25,7 @@ function loadContent(page) {
 }
 // Function to initialize the Slick slider
 function initializeOtherJs() {
+  $('body,html').animate({scrollTop : 0}, 500);
   $('.ht-container').slick({
     infinite: true,
     slidesToShow: 1,
@@ -39,10 +40,7 @@ function initializeOtherJs() {
     $('.ht-container').slick('slickNext');
   });
 
-}
-$(document).ready(function () {
-  // Handle click event for nav-links
-
+  // Handle click event for Page Load Link
   $('a.page-load-link').on('click', function (e) {
     // e.preventDefault();
     // Get the value after '#' from the href attribute
@@ -50,44 +48,58 @@ $(document).ready(function () {
     // alert(page);
     // Call the function to load content based on page value
     loadContent(page);
-  });
-
-  // Load content on window load
-  var initialPage = window.location.hash.substring(1);
-  loadContent(initialPage);
-});
-
-$(document).ready(function () {
+  }); 
+  $(".sa-left-box").on('click', function(){
+   $(this).parent().toggleClass("active");
+  //  $(this).parent().toggleClass("d-flex");
+  })
+  $(".nav-left a").on('click',  function(){
+    $("#nav-hide").removeClass('active');
+    $("body").removeClass('overflow-hidden');
+  })
   // Handle mouseenter event for .service-box elements inside the main element
-  $('main').on('mouseenter', '.service-box:nth-child(2)', function () {
+  $('.service-box:nth-child(2)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#fff' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-1.jpg)');
     $(this).parent().find(".service-arrow").css({ 'transform': 'translate(270px, 13px)', 'color': '#fff' });
   });
-  $('main').on('mouseenter', '.service-box:nth-child(3)', function () {
+  $('.service-box:nth-child(3)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-2.jpg)');
     $(this).parent().find(".service-arrow").css({ 'transform': 'translate(150px, 76px)', 'color': '#090909' });
   });
-  $('main').on('mouseenter', '.service-box:nth-child(4)', function () {
+  $('.service-box:nth-child(4)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#fff' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-3.jpg)');
     $(this).parent().find(".service-arrow").css({ 'transform': 'translate(320px, 140px)', 'color': '#fff' });
   });
-  $('main').on('mouseenter', '.service-box:nth-child(5)', function () {
+  $('.service-box:nth-child(5)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-4.jpg)');
     $(this).parent().find(".service-arrow").css({ 'transform': 'translate(330px, 202px)', 'color': '#090909' });
   });
-  $('main').on('mouseenter', '.service-box:nth-child(6)', function () {
+  $('.service-box:nth-child(6)').on('mouseenter', function () {
     $(".service-box h4").css({ "font-weight": "400", 'color': '#090909' });
     $(this).find("h4").css("font-weight", "700");
     $(this).parent().parent().parent().parent().css('background', 'url(../image/service-5.jpg)');
     $(this).parent().find(".service-arrow").css({ 'transform': 'translate(360px, 266px)', 'color': '#090909' });
   });
   // Rest of your code...
+}
+$(document).ready(function () {
+  $(window).on('hashchange', function() {
+    var initialPage = window.location.hash.substring(1);
+    loadContent(initialPage);
+});
+  // Load content on window load
+  var initialPage = window.location.hash.substring(1);
+  loadContent(initialPage);
+});
+
+$(document).ready(function () {
+  
 });
