@@ -5,7 +5,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="hh-text">
-                        <h1>WE ARE A <br> CREATIVE <span class="text-red"> AGENCY. </span></h1>
+                        <h1>WE ARE A <br class="d-none d-md-block"> CREATIVE <span class="text-red"> AGENCY. </span></h1>
                         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga similique nostrum, iure ullam
                             beatae quaerat officiis molestias deleniti nobis necessitatibus!</p>
                     </div>
@@ -33,14 +33,14 @@
     <section class="take-your-brand">
         <div class="container-xxl">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 mb-3">
                     <div class="sec-h">
                         <i class="fa-solid fa-square-full"></i>
                         <h6>02. At MediaX</h6>
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="tyb-h d-flex align-items-center gap-3">
+                    <div class="tyb-h d-flex align-items-center gap-sm-3">
                         <h2 class="m-0">we take your brands forward</h2>
                         <div class="tyb-h-img">
                             <img src="image/logo-x.png" class="w-100" alt="">
@@ -116,29 +116,29 @@
     <!-- Brands Slider Section End -->
 
     <!-- Service Section Start -->
-    <section class="service">
+    <section class="service child-1" id="service-sec">
         <div class="container-xxl">
             <div class="sec-h">
                 <i class="fa-solid fa-square-full"></i>
                 <h6>03. SERVICES</h6>
             </div>
-            <div class="row py-5 ms-5">
+            <div class="row py-2 py-md-5 ms-sm-5">
                 <div class="col-12 position-relative">
                     <div class="service-arrow"> <i class="fa-solid fa-arrow-right-long"></i></div>
-                    <div class="service-box py-3">
-                        <h4>DIGITAL MARKETING</h4>
+                    <div class="service-box child-1 py-3">
+                        <h4>DIGITAL  MARKETING</h4>
                     </div>
-                    <div class="service-box py-3">
+                    <div class="service-box child-2 py-3">
                         <h4>BRANDING</h4>
                     </div>
-                    <div class="service-box py-3">
-                        <h4>WEBSITE DEVELOPMENT</h4>
+                    <div class="service-box child-3 py-3">
+                        <h4>WEBSITE  DEVELOPMENT</h4>
                     </div>
-                    <div class="service-box py-3">
-                        <h4>INFLUENCER MARKETING</h4>
+                    <div class="service-box child-4 py-3">
+                        <h4>INFLUENCER  MARKETING</h4>
                     </div>
-                    <div class="service-box py-3">
-                        <h4>PERFORMANCE MARKETING</h4>
+                    <div class="service-box child-5 py-3">
+                        <h4>PERFORMANCE  MARKETING</h4>
                     </div>
                 </div>
             </div>
@@ -242,12 +242,12 @@
             <div class="ht-container">
                 <div class="ht-box">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-3">
+                        <div class="col-sm-3 text-center text-sm-start">
                             <img src="image/test-2.png" alt="">
                             <p class="mt-3 mb-1">Aman Sharma</p>
                             <p>CEO</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <div class="d-flex align-items-center justify-content-between gap-4 mb-3">
                                 <div class="t-line"></div>
                                 <div class="t-arrow d-flex gap-2">
@@ -279,12 +279,12 @@
                 </div>
                 <div class="ht-box">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-3">
+                        <div class="col-sm-3 text-center text-sm-start">
                             <img src="image/test-2.png" alt="">
                             <p class="mt-3 mb-1">Javed Habib</p>
                             <p>CEO</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <div class="d-flex align-items-center justify-content-between gap-4 mb-3">
                                 <div class="t-line"></div>
                                 <div class="t-arrow d-flex gap-2">
@@ -316,12 +316,12 @@
                 </div>
                 <div class="ht-box">
                     <div class="row justify-content-between align-items-center">
-                        <div class="col-3">
+                        <div class="col-sm-3 text-center text-sm-start">
                             <img src="image/test-3.png" alt="">
                             <p class="mt-3 mb-1">Aman Sharma</p>
                             <p>CEO</p>
                         </div>
-                        <div class="col-9">
+                        <div class="col-sm-9">
                             <div class="d-flex align-items-center justify-content-between gap-4 mb-3">
                                 <div class="t-line"></div>
                                 <div class="t-arrow d-flex gap-2">
@@ -352,6 +352,21 @@
                     </div>
                 </div>
             </div>
+            <script>
+                $('.ht-container').slick({
+                    infinite: true,
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false
+                });
+                $('.t-arrow .fa-arrow-left').on('click', function () {
+                    $('.ht-container').slick('slickPrev');
+                });
+
+                $('.t-arrow .fa-arrow-right').on('click', function () {
+                    $('.ht-container').slick('slickNext');
+                });
+            </script>
         </div>
     </section>
     <!-- Testimonial Section End -->
@@ -365,7 +380,7 @@
                         <h3>Let's Connect</h3>
                         <div class="contact-link mt-2">
                             <a href="#contact"
-                                class="page-load-link d-flex align-items-center justify-content-center gap-2">
+                                class="page-load-link d-flex flex-column flex-sm-row align-items-center justify-content-center gap-2">
                                 <p class="p-0 m-0">Contact us</p>
                                 <img src="image/contact-us-icon.png" alt="">
                             </a>
