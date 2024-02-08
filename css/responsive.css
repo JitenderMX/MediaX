@@ -30,6 +30,8 @@
         /* 35% reduction */
         --th-h3: calc(54px * 0.70);
         /* 35% reduction */
+        --th-h4: calc(35px * 0.70);
+        /* 35% reduction */
         --th-p1: calc(24px * 0.90);
         /* 35% reduction */
         --th-p2: calc(18px * 0.90);
@@ -147,6 +149,26 @@
         height: auto;
         padding: 20px;
     }
+  
+    .ywf-container .ywf-box{
+        max-width: 600px;
+        padding: 0px  ;
+    }
+    .ywf-container .ywf-box h4{
+        text-transform: none;
+        font-size: 32px;
+    }
+    /* Openings  */
+    .opening-box{
+        padding: 20px;
+        text-align: left;
+    }
+    .opening-box .apply-btn{
+        opacity: 1;
+    }
+    .you-will-fit {
+        padding: 0px 0px 20px 0px;
+    }
 }
 
 
@@ -155,17 +177,12 @@
 @media screen and (max-width: 576px) {
     :root {
         --th-h1: calc(120px * 0.4);
-        /* 35% reduction */
         --th-h2: calc(64px * 0.4);
-        /* 35% reduction */
         --th-h3: calc(54px * 0.4);
-        /* 35% reduction */
+        --th-h4: calc(35px * 0.5);
         --th-p1: calc(24px * 0.80);
-        /* 35% reduction */
         --th-p2: calc(18px * 0.80);
-        /* 35% reduction */
         --th-p3: calc(16px * 0.80);
-        /* 35% reduction */
     }
 
     /* header */
@@ -316,4 +333,5 @@
     .error-404 h1{
         font-size: 100px !important;
     }
+
 }

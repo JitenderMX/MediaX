@@ -47,6 +47,7 @@ Spacing System
     --th-h1: 120px;
     --th-h2: 64px;
     --th-h3: 54px;
+    --th-h4: 35px;
     --th-p1: 24px;
     --th-p2: 18px;
     --th-p3: 16px;
@@ -108,6 +109,10 @@ h2 {
 
 h3 {
     font-size: var(--th-h3) !important;
+}
+
+h4 {
+    font-size: var(--th-h4) !important;
 }
 
 h6 {
@@ -182,8 +187,7 @@ p {
     max-width: 300px;
 }
 
-Scroll Bar style start 
-::-webkit-scrollbar {
+Scroll Bar style start::-webkit-scrollbar {
     width: 10px;
 }
 
@@ -369,12 +373,27 @@ nav .nav-right a {
 
 /* 1. Home Hero Banner Section Start ------------------------------ */
 @keyframes zigzag {
-    0% { transform: translate(-30%, -60%) scale(1); }
-    25% { transform: translate(-0%, -40%) scale(.7); }
-    50% { transform: translate(30%, -60%) scale(.8); }
-    75% { transform: translate(50%, -40%) scale(.9); }
-    100% { transform: translate(80%, -60%) scale(.7); }
+    0% {
+        transform: translate(-30%, -60%) scale(1);
+    }
+
+    25% {
+        transform: translate(-0%, -40%) scale(.7);
+    }
+
+    50% {
+        transform: translate(30%, -60%) scale(.8);
+    }
+
+    75% {
+        transform: translate(50%, -40%) scale(.9);
+    }
+
+    100% {
+        transform: translate(80%, -60%) scale(.7);
+    }
 }
+
 .home-hero {
     background: var(--th-color-2);
     padding: 80px 0 30px 0;
@@ -416,7 +435,7 @@ nav .nav-right a {
     left: 50%;
     transform: translate(-30%, -60%);
     z-index: 1;
-    animation: zigzag 10s infinite alternate; 
+    animation: zigzag 10s infinite alternate;
 }
 
 /* -------------  Home Hero Banner Section  End ------------- */
@@ -529,62 +548,75 @@ nav .nav-right a {
     transition: all .5s;
 }
 
-.service.child-1{
+.service.child-1 {
     background: url(../image/service-1.jpg);
 }
-.service.child-2{
+
+.service.child-2 {
     background: url(../image/service-2.jpg);
 }
-.service.child-3{
+
+.service.child-3 {
     background: url(../image/service-3.jpg);
 }
-.service.child-4{
+
+.service.child-4 {
     background: url(../image/service-4.jpg);
 }
-.service.child-5{
+
+.service.child-5 {
     background: url(../image/service-5.jpg);
 }
-.service.child-1 .service-box h4{
-    color: var(--th-color-3); 
-}
-.service.child-1 .service-box.child-1 h4{
-    font-weight: 700;
-    color: var(--th-color-3); 
-}
 
-.service.child-1 .service-arrow{
-    transform:translate(270px, 13px);
+.service.child-1 .service-box h4 {
     color: var(--th-color-3);
 }
-.service.child-2 .service-arrow{
+
+.service.child-1 .service-box.child-1 h4 {
+    font-weight: 700;
+    color: var(--th-color-3);
+}
+
+.service.child-1 .service-arrow {
+    transform: translate(270px, 13px);
+    color: var(--th-color-3);
+}
+
+.service.child-2 .service-arrow {
     transform: translate(150px, 74px);
     color: var(--th-color-2);
 }
-.service.child-3 .service-arrow{
+
+.service.child-3 .service-arrow {
     transform: translate(320px, 134px);
     color: var(--th-color-2);
 }
-.service.child-4 .service-arrow{
-    transform:translate(330px, 194px);
+
+.service.child-4 .service-arrow {
+    transform: translate(330px, 194px);
     color: var(--th-color-2);
 }
-.service.child-5 .service-arrow{
-    transform:translate(360px, 257px);
+
+.service.child-5 .service-arrow {
+    transform: translate(360px, 257px);
     color: var(--th-color-2);
 }
+
 .service.child-2 .sec-h h6,
 .service.child-3 .sec-h h6,
 .service.child-4 .sec-h h6,
-.service.child-5 .sec-h h6{
+.service.child-5 .sec-h h6 {
     color: var(--th-color-2);
 }
+
 .service.child-1 .service-box.child-1 h4,
 .service.child-2 .service-box.child-2 h4,
 .service.child-3 .service-box.child-3 h4,
 .service.child-4 .service-box.child-4 h4,
-.service.child-5 .service-box.child-5 h4{
-    font-weight: 700; 
+.service.child-5 .service-box.child-5 h4 {
+    font-weight: 700;
 }
+
 /* ------------- Service Section  End ------------- */
 
 /* 5.Success Stories Section Start ------------------------------ */
@@ -938,11 +970,11 @@ footer b {
     transform: rotate(180deg);
 }
 
-.sa-box.active  .sa-right-box {
+.sa-box.active .sa-right-box {
     padding: 20px;
 }
 
-.sa-right-img{
+.sa-right-img {
     width: 100%;
     min-width: 500px;
     min-height: 400px;
@@ -952,18 +984,23 @@ footer b {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.sa-box-1 .sa-right-img{
+
+.sa-box-1 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
 }
-.sa-box-2 .sa-right-img{
+
+.sa-box-2 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
 }
-.sa-box-3 .sa-right-img{
+
+.sa-box-3 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
 }
-.sa-box-4 .sa-right-img{
+
+.sa-box-4 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
 }
+
 .sa-right-box .sa-right-img {
     display: none;
 }
@@ -1121,10 +1158,105 @@ footer b {
 .located {
     padding: 50px 0;
 }
-.error-404{
+
+.error-404 {
     padding: 130px 0;
 }
-.error-404 h1{
+
+.error-404 h1 {
     font-size: 180px !important;
 }
+
 /* ------------- Located Section  End ------------- */
+
+
+/* 18.Career Hero Section Start ------------------------------ */
+.career-hero {
+    padding: 50px 0;
+}
+
+/* ------------- Career Hero Section  End ------------- */
+
+/* 19.You Will Fit Section Start ------------------------------ */
+.you-will-fit {
+    padding: 50px 0;
+}
+
+.ywf-container .ywf-box {
+    max-width: 650px;
+    padding: 20px 20px 20px 0;
+}
+
+.ywf-container .ywf-box h4 {
+    text-transform: none;
+    font-weight: 500;
+}
+
+/* ------------- You Will Fit Section  End ------------- */
+
+/* 20.Opening Section Start ------------------------------ */
+.opening-head h5 {
+    color: var(--th-color-5);
+    font-size: var(--th-p1);
+    font-weight: 700;
+    line-height: 130%;
+    text-align: center;
+    padding: 10px 0;
+}
+.opening-box{
+    padding: 30px;
+    margin-bottom: 30px;
+    border-top: 1px solid #878787;
+    border-bottom: 1px solid #878787;
+    text-align: center;
+    transition: all .5s;
+}
+.opening-box h4{
+   transition: all .5s;
+}
+.opening-box p{
+    /* font-size: var(--th-p1); */
+   font-weight: 400;
+   transition: all .5s;
+}
+.opening-box .apply-btn{
+    opacity: 0;
+}
+.opening-box .apply-btn .ab-text{
+    transform: translateX(0);
+    transition:all .5s;
+}
+.opening-box:hover{
+    background-color: var(--th-color-2);
+}
+.opening-box:hover h4,
+.opening-box:hover p{
+    color: var(--th-color-4);
+}
+.opening-box:hover .apply-btn{
+    opacity: 1;
+}
+
+.opening-box .apply-btn .ab-img{
+    transform: translateX(0);
+    transition:all .5s;
+}
+.opening-box .apply-btn:hover .ab-text{
+    transform: translateX(120%);
+}
+.opening-box .apply-btn:hover .ab-img{
+    transform: translateX(-120%);
+}
+/* ------------- Opening Section  End ------------- */
+
+.warning-box{
+    background-color: var(--th-color-1);
+    padding: 30px;
+    margin-bottom: 50px;
+}
+.warning-box h2{
+    color: var(--th-color-4);
+}
+.warning-box p{
+    color: var(--th-color-4);
+}
