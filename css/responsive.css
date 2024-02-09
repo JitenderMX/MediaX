@@ -114,58 +114,68 @@
     .oc-container .oc-box {
         height: 100px;
     }
-    .oc-container .oc-box img{
+
+    .oc-container .oc-box img {
         max-width: 100px;
         max-height: 100px;
     }
-    
+
     /* Our Creative Crew */
-    .our-creative-crew{
+    .our-creative-crew {
         padding: 50px 0;
     }
+
     .occ-container .occ-box {
         width: 3500px;
     }
 
     /* Project Page  */
-    #project-page .ss-box{
+    #project-page .ss-box {
         border: 1px solid var(--th-color-4);
     }
-    .contact-form{
+
+    .contact-form {
         padding: 50px 0;
     }
+
     .sa-left-box p.top-space {
         margin-top: 0px;
     }
+
     .contact-form .contact-detials {
         position: static;
-        top:0px;
+        top: 0px;
         padding: 20px;
         margin-bottom: 20px;
     }
+
     .contact-form .cd-box {
         flex-wrap: wrap;
         flex-direction: row;
         height: auto;
         padding: 20px;
     }
-  
-    .ywf-container .ywf-box{
+
+    .ywf-container .ywf-box {
         max-width: 600px;
-        padding: 0px  ;
+        padding: 0px;
     }
-    .ywf-container .ywf-box h4{
+
+    .ywf-container .ywf-box h4 {
         text-transform: none;
         font-size: 32px;
     }
+
     /* Openings  */
-    .opening-box{
+    .opening-box {
         padding: 20px;
         text-align: left;
     }
-    .opening-box .apply-btn{
+
+    .opening-box .apply-btn {
         opacity: 1;
     }
+
     .you-will-fit {
         padding: 0px 0px 20px 0px;
     }
@@ -257,7 +267,7 @@
     .service.child-5 .service-arrow {
         transform: translate(270px, 225px);
     }
-    
+
 
     /* .service-arrow {
         display: none;
@@ -293,27 +303,58 @@
         padding: 50px 0;
     }
 
-     /* Our Clientele */
+    /* Our Clientele */
 
-     .oc-container .oc-box {
+    .oc-container .oc-box {
         height: 80px;
     }
-    .oc-container .oc-box img{
+
+    .oc-container .oc-box img {
         max-width: 88px;
         max-height: 60px;
     }
 
-     /* Service Hero Image */
-    .service-img-sec{
+    /* Service Hero Image */
+    .service {
+        background-position: top center;
+    }
+
+    .service-img-sec {
         padding: 30px;
         transform: translateY(0%);
     }
+    .service .sec-h h6 {
+        color: var(--th-color-2) !important;
+    }
+    .service-box h4 {
+        color: var(--th-color-2) !important;
+    }
+    .service.child-1 {
+        background: url(../image/service-1-mob.jpg);
+    }
+
+    .service.child-2 {
+        background: url(../image/service-2-mob.jpg);
+    }
+
+    .service.child-3 {
+        background: url(../image/service-3-mob.jpg);
+    }
+
+    .service.child-4 {
+        background: url(../image/service-4-mob.jpg);
+    }
+
+    .service.child-5 {
+        background: url(../image/service-5-mob.jpg);
+    }
 
     /* Service Accordion */
-    .service-accordion{
+    .service-accordion {
         padding: 20px 0 0 0;
     }
-    .sa-right-img{
+
+    .sa-right-img {
         width: 100%;
         min-width: 300px;
         min-height: 300px;
@@ -323,44 +364,52 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
+
     .sa-box .sa-right-box .sa-right-img {
         display: block;
     }
-    
+
     .sa-box .sa-left-box .top-space-no {
         display: none;
     }
-    
+
     .sa-box .sa-left-box .top-space {
         display: block;
     }
-    
+
     .sa-box.active .sa-left-box .top-space {
         display: block;
     }
+
     .sa-left-box p.top-space {
         max-width: 100%;
         margin-top: 0px;
     }
-    .sa-box  .sa-right-box {
+
+    .sa-box .sa-right-box {
         padding: 20px;
     }
+
     .sa-box .sa-left-box img {
-      display: none;
+        display: none;
     }
+
     .sa-left-box {
         padding: 20px;
     }
-    .error-404 h1{
+
+    .error-404 h1 {
         font-size: 100px !important;
     }
+
     /* Apply Head  */
     .apply-head .ah-img {
         /* width: 100%; */
         max-width: 40px;
     }
+
     /* Job Description */
-    .job-description .jd-text{
+    .job-description .jd-text {
         padding: 15px;
-     }
+    }
 }

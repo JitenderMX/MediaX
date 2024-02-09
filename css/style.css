@@ -580,7 +580,13 @@ nav .nav-right a {
 .service.child-1 .service-box h4 {
     color: var(--th-color-3);
 }
+.service.child-1 .service-box p {
+    color: var(--th-color-3);
+}
 
+.service.child-1 .service-box.child-1 p {
+    color: var(--th-color-3);
+}
 .service.child-1 .service-box.child-1 h4 {
     font-weight: 700;
     color: var(--th-color-3);
@@ -635,7 +641,7 @@ nav .nav-right a {
 }
 
 .service.child-3 .service-arrow {
-    transform: translate(450px, 167px);
+    transform: translate(380px, 167px);
 }
 
 .service.child-4 .service-arrow {
@@ -645,7 +651,37 @@ nav .nav-right a {
 .service.child-5 .service-arrow {
     transform: translate(500px, 315px);
 }
-
+.service-text{
+    background-color: var(--th-color-4);
+    padding: 40px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+.service-text h5{
+   text-transform: capitalize !important;
+}
+.service-text .data-child{
+   display: none;
+}
+.service.child-1 .service-text .data-child[data-child="child-1"]{
+    display: flex;
+}
+.service.child-2 .service-text .data-child[data-child="child-2"]{
+    display: flex;
+}
+.service.child-3 .service-text .data-child[data-child="child-3"]{
+    display: flex;
+}
+.service.child-4 .service-text .data-child[data-child="child-4"]{
+    display: flex;
+}
+.service.child-5 .service-text .data-child[data-child="child-5"]{
+    display: flex;
+}
 /* ------------- Service Section  End ------------- */
 
 /* 5.Success Stories Section Start ------------------------------ */
