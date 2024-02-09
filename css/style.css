@@ -28,7 +28,7 @@ Spacing System
 /* 01. Google Font Start ------------------------------ */
 
 /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap'); */
-@import url('https://fonts.cdnfonts.com/css/helvetica-neue-55');
+/* @import url('https://fonts.cdnfonts.com/css/helvetica-neue-55'); */
 
 /* ------------- Google Font End ------------- */
 
@@ -43,7 +43,7 @@ Spacing System
     --th-color-5: #878787;
     --th-color-6: #EBEBEB;
     --th-color-6: #FFF0E8;
-    --th-font-1: 'Helvetica Neue', sans-serif;
+    --th-font-1: 'Helvetica Neue';
     --th-h1: 120px;
     --th-h2: 64px;
     --th-h3: 54px;
@@ -300,6 +300,7 @@ nav .nav-right a {
     line-height: 150%;
     letter-spacing: 0.02em;
     text-align: left;
+    text-transform: uppercase;
     position: relative;
     transition: all .5s;
 }
@@ -316,7 +317,7 @@ nav .nav-right a {
 
 #menu-container .nav-left li:nth-child(2) a::after,
 #menu-container .nav-left li:nth-child(2) a::before {
-    content: "ABOUT";
+    content: "Who we are";
 }
 
 #menu-container .nav-left li:nth-child(3) a::after,
@@ -326,7 +327,7 @@ nav .nav-right a {
 
 #menu-container .nav-left li:nth-child(4) a::after,
 #menu-container .nav-left li:nth-child(4) a::before {
-    content: "SERVICES";
+    content: "what we do";
 }
 
 #menu-container .nav-left li:nth-child(5) a::after,
@@ -956,6 +957,17 @@ footer b {
 .occ-container .occ-img-box img {
     width: 100%;
 }
+.occ-text p:first-child{
+    font-size: var(--th-p2);
+    font-weight: 500;
+    margin: 10px 0 5px 0;
+}
+.occ-text p:last-child{
+    font-size: var(--th-p3);
+    font-weight: 400;
+    margin-top: 0px;
+    text-align: center;
+}
 
 /* ------------- Our Clientele Section  End ------------- */
 
@@ -1028,6 +1040,12 @@ footer b {
 .sa-box-4 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
 }
+.sa-box-5 .sa-right-img {
+    background-image: url(../image/sa-box-1.png);
+}
+.sa-box-6 .sa-right-img {
+    background-image: url(../image/sa-box-1.png);
+}
 
 .sa-right-box .sa-right-img {
     display: none;
@@ -1073,11 +1091,11 @@ footer b {
     background-color: var(--th-color-2);
 }
 
-#project-page .success-stories .col-12 h2 {
+#project-page .success-stories .col-md-8 h2 {
     color: var(--th-color-4);
 }
 
-#project-page .success-stories .col-12 p {
+#project-page .success-stories .col-md-8 p {
     max-width: 900px;
     font-size: var(--th-p1);
     color: var(--th-color-4);
