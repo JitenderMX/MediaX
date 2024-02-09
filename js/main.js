@@ -9,7 +9,7 @@ AOS.init();
 // Function to handle loading content based on page value
 function loadContent(page) {
   // List of valid page values
-  var validPages = ['home', 'about', 'project', 'service', 'career', 'contact'];
+  var validPages = ['home', 'about', 'project', 'service', 'career', 'contact','apply'];
 
   // Check if the extracted page value is valid
   if (!page) {

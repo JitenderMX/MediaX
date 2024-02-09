@@ -368,6 +368,14 @@ nav .nav-right a {
     transform: translateY(0%);
 }
 
+#menu-container .nav-left a.active::after {
+    transform: translateY(-100%);
+}
+
+#menu-container .nav-left a.active::before {
+    transform: translateY(0%);
+}
+
 /* -------------  Header Section  End ------------- */
 
 
@@ -615,6 +623,26 @@ nav .nav-right a {
 .service.child-4 .service-box.child-4 h4,
 .service.child-5 .service-box.child-5 h4 {
     font-weight: 700;
+}
+
+.service.child-1 .service-arrow {
+    transform: translate(371px, 18px);
+}
+
+.service.child-2 .service-arrow {
+    transform: translate(210px, 92px);
+}
+
+.service.child-3 .service-arrow {
+    transform: translate(450px, 167px);
+}
+
+.service.child-4 .service-arrow {
+    transform: translate(460px, 240px);
+}
+
+.service.child-5 .service-arrow {
+    transform: translate(500px, 315px);
 }
 
 /* ------------- Service Section  End ------------- */
@@ -1203,7 +1231,8 @@ footer b {
     text-align: center;
     padding: 10px 0;
 }
-.opening-box{
+
+.opening-box {
     padding: 30px;
     margin-bottom: 30px;
     border-top: 1px solid #878787;
@@ -1211,52 +1240,130 @@ footer b {
     text-align: center;
     transition: all .5s;
 }
-.opening-box h4{
-   transition: all .5s;
+
+.opening-box h4 {
+    transition: all .5s;
 }
-.opening-box p{
+
+.opening-box p {
     /* font-size: var(--th-p1); */
-   font-weight: 400;
-   transition: all .5s;
+    font-weight: 400;
+    transition: all .5s;
 }
-.opening-box .apply-btn{
+
+.opening-box .apply-btn {
     opacity: 0;
 }
-.opening-box .apply-btn .ab-text{
+
+.opening-box .apply-btn .ab-text {
     transform: translateX(0);
-    transition:all .5s;
+    transition: all .5s;
 }
-.opening-box:hover{
+
+.opening-box:hover {
     background-color: var(--th-color-2);
 }
+
 .opening-box:hover h4,
-.opening-box:hover p{
+.opening-box:hover p {
     color: var(--th-color-4);
 }
-.opening-box:hover .apply-btn{
+
+.opening-box:hover .apply-btn {
     opacity: 1;
 }
 
-.opening-box .apply-btn .ab-img{
+.opening-box .apply-btn .ab-img {
     transform: translateX(0);
-    transition:all .5s;
+    transition: all .5s;
 }
-.opening-box .apply-btn:hover .ab-text{
+
+.opening-box .apply-btn:hover .ab-text {
     transform: translateX(120%);
 }
-.opening-box .apply-btn:hover .ab-img{
+
+.opening-box .apply-btn:hover .ab-img {
     transform: translateX(-120%);
 }
+
 /* ------------- Opening Section  End ------------- */
 
-.warning-box{
+
+/* 21.Warning Section Start ------------------------------ */
+.warning-box {
     background-color: var(--th-color-1);
     padding: 50px 30px;
     margin-bottom: 50px;
 }
-.warning-box h2{
+
+.warning-box h2 {
     color: var(--th-color-4);
 }
-.warning-box p{
+
+.warning-box p {
     color: var(--th-color-4);
+}
+
+/* ------------- Warning Section  End ------------- */
+
+/* 22.Apply Head Section Start ------------------------------ */
+.apply-head{
+    padding: 50px 0px;
+}
+.apply-head .ah-loc {
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+.apply-head .fa-solid{
+    font-size: var(--th-p1);
+}
+
+.apply-head .ah-time {
+    font-size: var(--th-p1);
+    color: var(--th-color-5);
+}
+
+.apply-head .ah-text p{
+    font-size: var(--th-p1);
+    font-weight: 400;
+}
+
+.apply-head .ah-img {
+    /* width: 100%; */
+    max-width: 100px;
+}
+.apply-head .ah-img img{
+    width: 100%;
+    transform: rotate(90deg);
+}
+
+/* ------------- Apply Head Section  End ------------- */
+
+/* 23.Job Description Section Start ------------------------------ */
+.job-description{
+    padding:0 0 50px 0;
+}
+.job-description .jd-text{
+   padding: 30px;
+   background-color: var(--th-color-2);
+}
+.job-description .jd-text h4{
+   font-size: var(--th-p1) !important   ;
+   color: var(--th-color-4);
+}
+.job-description .jd-text ul{
+   list-style: disc;
+   color: var(--th-color-4);
+}
+.job-description .jd-text li p{
+   color: var(--th-color-4);
+}
+/* ------------- Job Description Section  End ------------- */
+
+.af-img{
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    position: sticky;
+    top: 100px;
 }

@@ -32,7 +32,7 @@
         /* 35% reduction */
         --th-h4: calc(35px * 0.70);
         /* 35% reduction */
-        --th-p1: calc(24px * 0.90);
+        --th-p1: calc(24px * 0.80);
         /* 35% reduction */
         --th-p2: calc(18px * 0.90);
         /* 35% reduction */
@@ -180,7 +180,7 @@
         --th-h2: calc(64px * 0.4);
         --th-h3: calc(54px * 0.4);
         --th-h4: calc(35px * 0.5);
-        --th-p1: calc(24px * 0.80);
+        --th-p1: calc(24px * 0.70);
         --th-p2: calc(18px * 0.80);
         --th-p3: calc(16px * 0.80);
     }
@@ -354,5 +354,13 @@
     .error-404 h1{
         font-size: 100px !important;
     }
-
+    /* Apply Head  */
+    .apply-head .ah-img {
+        /* width: 100%; */
+        max-width: 40px;
+    }
+    /* Job Description */
+    .job-description .jd-text{
+        padding: 15px;
+     }
 }
