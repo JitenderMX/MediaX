@@ -300,7 +300,7 @@ nav .nav-right a {
     line-height: 150%;
     letter-spacing: 0.02em;
     text-align: left;
-    text-transform: uppercase;
+    text-transform: capitalize;
     position: relative;
     transition: all .5s;
 }
@@ -312,32 +312,32 @@ nav .nav-right a {
 
 #menu-container .nav-left li:nth-child(1) a::after,
 #menu-container .nav-left li:nth-child(1) a::before {
-    content: "HOME";
+    content: "Home";
 }
 
 #menu-container .nav-left li:nth-child(2) a::after,
 #menu-container .nav-left li:nth-child(2) a::before {
-    content: "Who we are";
+    content: "Who We Are";
 }
 
 #menu-container .nav-left li:nth-child(3) a::after,
 #menu-container .nav-left li:nth-child(3) a::before {
-    content: "PROJECT";
+    content: "Our Work";
 }
 
 #menu-container .nav-left li:nth-child(4) a::after,
 #menu-container .nav-left li:nth-child(4) a::before {
-    content: "what we do";
+    content: "What We Do";
 }
 
 #menu-container .nav-left li:nth-child(5) a::after,
 #menu-container .nav-left li:nth-child(5) a::before {
-    content: "CONTACT";
+    content: "Contact";
 }
 
 #menu-container .nav-left li:nth-child(6) a::after,
 #menu-container .nav-left li:nth-child(6) a::before {
-    content: "CAREERS";
+    content: "Careers";
 }
 
 #menu-container .nav-left a::after {
