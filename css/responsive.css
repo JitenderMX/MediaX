@@ -61,23 +61,23 @@
 
     /* Service Section */
     .service.child-1 .service-arrow {
-        transform: translate(245px, 15px);
+        transform: translate(265px, 14px);
     }
 
     .service.child-2 .service-arrow {
-        transform: translate(140px, 73px);
+        transform: translate(150px, 76px);
     }
 
     .service.child-3 .service-arrow {
-        transform: translate(290px, 132px);
+        transform: translate(315px, 137px);
     }
 
     .service.child-4 .service-arrow {
-        transform: translate(300px, 190px);
+        transform: translate(320px, 198px);
     }
 
     .service.child-5 .service-arrow {
-        transform: translate(330px, 250px);
+        transform: translate(360px, 260px);
     }
 
     /* success-stories */
@@ -238,9 +238,30 @@
         padding: 50px 0;
     }
 
-    .service-arrow {
-        display: none;
+    .service.child-1 .service-arrow {
+        transform: translate(200px, 13px);
     }
+
+    .service.child-2 .service-arrow {
+        transform: translate(115px, 66px);
+    }
+
+    .service.child-3 .service-arrow {
+        transform: translate(240px, 120px);
+    }
+
+    .service.child-4 .service-arrow {
+        transform: translate(250px, 172px);
+    }
+
+    .service.child-5 .service-arrow {
+        transform: translate(270px, 225px);
+    }
+    
+
+    /* .service-arrow {
+        display: none;
+    } */
 
     /* Success Stories */
     .success-stories .ss-box {

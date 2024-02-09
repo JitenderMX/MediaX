@@ -1251,7 +1251,7 @@ footer b {
 
 .warning-box{
     background-color: var(--th-color-1);
-    padding: 30px;
+    padding: 50px 30px;
     margin-bottom: 50px;
 }
 .warning-box h2{
