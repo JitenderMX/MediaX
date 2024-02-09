@@ -1047,7 +1047,7 @@ footer b {
 }
 
 .sa-box.active .sa-right-box {
-    padding: 20px;
+    /* padding: 20px; */
 }
 
 .sa-right-img {
@@ -1055,33 +1055,33 @@ footer b {
     min-width: 500px;
     min-height: 400px;
     height: 100%;
-    border-radius: 20px;
+    border-radius: 0px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .sa-box-1 .sa-right-img {
-    background-image: url(../image/sa-box-1.png);
+    background-image: url(../image/service-1.jpg);
 }
 
 .sa-box-2 .sa-right-img {
-    background-image: url(../image/sa-box-1.png);
+    background-image: url(../image/service-2.jpg);
 }
 
 .sa-box-3 .sa-right-img {
-    background-image: url(../image/sa-box-1.png);
+    background-image: url(../image/service-3.jpg);
 }
 
 .sa-box-4 .sa-right-img {
-    background-image: url(../image/sa-box-1.png);
+    background-image: url(../image/service-4.jpg);
 }
 .sa-box-5 .sa-right-img {
-    background-image: url(../image/sa-box-1.png);
+    background-image: url(../image/service-5.jpg);
 }
-.sa-box-6 .sa-right-img {
+/* .sa-box-6 .sa-right-img {
     background-image: url(../image/sa-box-1.png);
-}
+} */
 
 .sa-right-box .sa-right-img {
     display: none;
